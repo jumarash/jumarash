@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>annyang</title>
+    <link rel="stylesheet" href="css/style.css">
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="heading"> Use Voice Command to Control The Video</div>
+    <section class="video-outer">
+        <video id="myVideo"  controls autoplay>
+          <source src="summer.mp4" type="video/mp4"/> 
+  
+        </video>
+    </section>
+    
+    <!-- <script src="js/annyang.min.js"></script>  -->
+  <script src="js/annyang.min.js"></script> 
+    <script>
+        if (annyang) {
+         
+          var commands = {
+           
+            'play video': function() {
+             document.getElementById("myVideo").play();
+            },
+
+            'pause video': function() {
+             document.getElementById("myVideo").pause();
+            },
+
+            'rewind video': function() {
+             document.getElementById("myVideo").rewind();
+            },
+
+            'forward video': function() {
+             document.getElementById("myVideo").forward();
+            },
+          };
+        
+          // Add our commands to annyang
+          annyang.addCommands(commands);
+        
+          // Start listening. You can call this here, or attach this call to an event, button, etc.
+          annyang.start();
+        }
+        </script>
+
+  <div class="container">     
+<button class="Btn-video" type="button">
+  Completed!
+   </button>
+  </div> 
+</body>
+</html>

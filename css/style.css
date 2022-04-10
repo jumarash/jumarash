@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  #myVideo{
+    width: 100%;
+    height: auto;
+  
+  
+  }
+  .heading{
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #faa831;
+  }
+
+  .Btn-video{
+    width: 160px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #689288;
+    color: #d4e9eb;
+   
+  
+  }
+
+  .container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
